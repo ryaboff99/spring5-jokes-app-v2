@@ -16,8 +16,8 @@ public class JokeController {
 
     @RequestMapping({"/", ""})  // when a request come, it will go to the root of the context that is running the application context
     public String showJoke(Model model) {
-        model.addAttribute("joke", jokeService.getJoke());
+        model.addAttribute("joke", jokeService.getJoke()); // add to map sequence "model" key "joke" and String value, this String value will be inserted in index.html by "joke" key by Thymeleaf
 
-        return "index";
+        return "index";     // return index.html under "templates" dir to the client
     }
 }

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<!--xmlns should be added manually, this is an extension that Thymeleaf works on -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuck Norris Jokes</title>
+</head>
+<body>
+    <h1>Chuck Norris Joke</h1>
+<!--"Show Joke here..." will be replaced at runtime by value of a "joke" model by Thymeleaf-->
+    <p th:text="${joke}">Show Joke here...</p>
+</body>
+</html>
